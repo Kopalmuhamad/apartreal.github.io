@@ -200,6 +200,154 @@ header .box-header {
 /* Box Header 2 End */
 
 
+
+
+
+
+
+
+/* Apartment start */
+.apartment {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.apartment-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.apartment-container .box-apartment {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.apartment-container .box-apartment .box img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.apartment-container .box-apartment .box .desc .star i {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.apartment-container .box-apartment .box .desc h3 {
+    margin-bottom: 5px;
+}
+
+.apartment-container .box-apartment .box .desc p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.apartment-container .box-apartment .box .desc button {
+    width: 150px;
+    height: 45px;
+    border-radius: 0.3em;
+    border: none;
+    margin-top: 10px;
+    background-color: #316ac3;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.apartment-container .box-apartment .box .desc button:hover {
+    background-color: #1b4ea7;
+}
+
+/* Apartment end */
+
+/* Bg Fixed Start */
+.bg-fixed {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/img/bg-fixed.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.bg-fixed h1 {
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Bg Fixed End */
+
+
+
+/* About Start */
+.about {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.about .about-container {}
+
+.about-container .box-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 30px;
+}
+
+.box-about .box:nth-child(1) {}
+
+.box-about .box:nth-child(1) img {
+    width: 100%;
+    border-radius: 0.8em;
+}
+
+.box-about .box:nth-child(2) {}
+
+.box-about .box:nth-child(2) h1 {
+    margin-bottom: 10px;
+}
+
+.box-about .box:nth-child(2) p {
+    margin-bottom: 20px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.box-about .box:nth-child(2) button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #316ac3;
+    border-radius: 0.3em;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.box-about .box:nth-child(2) button:hover {
+    background-color: #1b4ea7;
+}
+
+
+/* About End */
+
+
 @media (max-width:1200px) {
     .box:nth-child(1) .menu-nav ul li {
         margin-inline: 0px;
@@ -307,6 +455,20 @@ header .box-header {
     .box-header>.box:nth-child(2) {
         display: none;
     }
+
+    .about .box-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .about .box-about .box:nth-child(1) img {
+        width: 400px;
+    }
+
+    .about .box-about .box:nth-child(2) p {
+        text-align: center;
+    }
 }
 
 @media (max-width:768px) {
@@ -318,15 +480,58 @@ header .box-header {
         position: static;
         width: 90%;
     }
+
+    .bg-fixed h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width:600px) {
+    .about {
+        padding: 50px -100px;
+    }
+
+    .about .box-about {
+        grid-template-columns: minmax(200px, 1fr);
+        grid-template-rows: repeat(2, 250px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .box-about .box:nth-child(1) img {
+        width: 100%;
+    }
+
+    .about .box-about .box:nth-child(2) h1 {
+        text-align: center;
+    }
+
+    .about .box-about .box:nth-child(2) p {
+        font-size: 0.8em;
+        text-align: justify;
+    }
 }
 
 @media (max-width:425px) {
+    .about {
+        min-height: 90vh;
+        padding: 30px 30px 30px;
+    }
+
     .box:nth-child(1) .header-container .info {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         column-gap: 75px;
         margin-top: 45px;
+    }
+
+    .apartment-container .box-apartment .box .desc {
+        text-align: center;
+    }
+
+    .bg-fixed h1 {
+        font-size: 2.2em;
     }
 }
 
@@ -344,5 +549,13 @@ header .box-header {
         align-items: center;
         row-gap: 20px;
         margin-top: 55px;
+    }
+
+    .apartment .apartment-container .box-apartment {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .apartment {
+        padding-top: 145px;
     }
 }
