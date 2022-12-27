@@ -13,6 +13,7 @@ header .box-header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    overflow: hidden;
 }
 
 /* Box Header 1 Start */
@@ -125,7 +126,7 @@ header .box-header {
 }
 
 .header-container .info {
-    margin-top: 130px;
+    margin-top: 110px;
     display: flex;
     column-gap: 30px;
 }
@@ -298,6 +299,7 @@ header .box-header {
     display: grid;
     align-items: center;
     padding: 50px 100px;
+    background-color: #ffb703;
 }
 
 .about .about-container {}
@@ -346,6 +348,66 @@ header .box-header {
 
 
 /* About End */
+
+
+/* Services Start */
+.services {
+    width: 100%;
+    padding: 80px 20px;
+    background-color: #023047;
+
+}
+
+.services .container-service {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container-service .box-service {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    padding: 20px;
+    gap: 30px;
+    background-color: #023047;
+}
+
+.box-service .box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 180px;
+    border-radius: 0.8em;
+    text-align: center;
+    background-color: #fff;
+}
+
+.box-service .box img {
+    width: 100px;
+}
+
+.box-service .box p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Services End */
+
+/* Footer start */
+footer {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fb8500;
+    padding: 30px 0;
+}
+
+/* Footer End */
 
 
 @media (max-width:1200px) {

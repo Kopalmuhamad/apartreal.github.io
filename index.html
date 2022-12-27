@@ -24,6 +24,13 @@
     <!-- ======================== REMIX ICON ======================== -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+    <!-- ======================== ANIMATE CSS ======================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- ======================== ANIMATE ON SCROLL (AOS) ======================== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 
 
 
@@ -51,20 +58,20 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum nihil reiciendis.
                         </p>
                     </div>
-                    <form action="">
+                    <form action="" class="animate__animated animate__backInLeft">
                         <input type="text" placeholder="Find Your Apartment...">
                         <button>Submit</button>
                     </form>
                     <div class="info">
-                        <div class="box-info">
+                        <div class="box-info animate__animated animate__backInUp">
                             <h1>12K <i class="fa-solid fa-arrow-up"></i></h1>
                             <p>Property We Self</p>
                         </div>
-                        <div class="box-info">
-                            <h1>240 <i class="fa-solid fa-arrow-up"></i></h1>
+                        <div class="box-info animate__animated animate__backInUp animate__delay-1s">
+                            <h1>240 <i class="fa-solid fa-arrow-up "></i></h1>
                             <p>Our Customers</p>
                         </div>
-                        <div class="box-info">
+                        <div class="box-info animate__animated animate__backInUp animate__delay-2s">
                             <h1>80 <i class="fa-solid fa-arrow-up"></i></h1>
                             <p>Property District</p>
                         </div>
@@ -74,7 +81,7 @@
             <div class="box">
                 <img src="assets/img/hero.jpg" alt="pexels.com">
                 <div class="bg-black"></div>
-                <div class="loc">
+                <div class="loc animate__animated animate__backInRight">
                     <p>Apartemen Bogor Raya</p>
                     <p><i class="fa-solid fa-location-dot pin-map"></i>Bogor Indonesia</p>
                 </div>
@@ -88,7 +95,7 @@
     <section class="apartment" id="apartment">
         <div class="apartment-container">
             <div class="box-apartment">
-                <div class="box">
+                <div class="box" data-aos="flip-left" data-aos-duration="1500">
                     <img src="assets/img/apartment1.jpg" alt="">
                     <div class="desc">
                         <div class="star">
@@ -102,7 +109,7 @@
                         <button>Detail</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="flip-left" data-aos-duration="1500">
                     <img src="assets/img/apartment2.jpg" alt="">
                     <div class="desc">
                         <div class="star">
@@ -116,7 +123,7 @@
                         <button>Detail</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="flip-left" data-aos-duration="1500">
                     <img src="assets/img/apartment3.jpg" alt="">
                     <div class="desc">
                         <div class="star">
@@ -130,7 +137,7 @@
                         <button>Detail</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="flip-left" data-aos-duration="1500">
                     <img src="assets/img/apartment4.jpg" alt="">
                     <div class="desc">
                         <div class="star">
@@ -144,7 +151,7 @@
                         <button>Detail</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="flip-left" data-aos-duration="1500">
                     <img src="assets/img/apartment5.jpg" alt="">
                     <div class="desc">
                         <div class="star">
@@ -158,7 +165,7 @@
                         <button>Detail</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="flip-left" data-aos-duration="1500">
                     <img src="assets/img/apartment6.jpg" alt="">
                     <div class="desc">
                         <div class="star">
@@ -206,11 +213,60 @@
     <!-- ================= ABOUT END ================= -->
 
 
+    <!-- ================= SERVICES START ================= -->
+    <section class="services" id="services">
+        <div class="container-service">
+            <div class="box-service">
+                <div class="box">
+                    <img src="assets/icon/award.gif" alt="">
+                    <p>The best apart in Bogor</p>
+                </div>
+                <div class="box">
+                    <img src="assets/icon/cloud-network.gif" alt="">
+                    <p>Networking make fast everything you need</p>
+                </div>
+                <div class="box">
+                    <img src="assets/icon/idea.gif" alt="">
+                    <p>Our team can work initiatif</p>
+                </div>
+                <div class="box">
+                    <img src="assets/icon/money-bag.gif" alt="">
+                    <p>Cheap Price</p>
+                </div>
+                <div class="box">
+                    <img src="assets/icon/social-care.gif" alt="">
+                    <p>We Serve Everyone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= SERVICES END ================= -->
+
+    <!-- ================= FOOTER START ================= -->
+    <footer>
+        <p>created by <strong>KopalMuhamad</strong></p>
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+
+
+
+
+
 
 
 
     <!-- ======================== MY JS ======================== -->
     <script src="dist/js/script.js"></script>
+
+    <!-- ======================== ANIMATE ON SCROLL (AOS) ======================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
